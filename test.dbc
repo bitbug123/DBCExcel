@@ -1,0 +1,253 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ABSESP
+
+
+BO_ 454 PPEI_Chassis_Eng_Torque_Req_1: 8 ABSESP
+ SG_ ChassisSysEngTorqueCheckSum : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ChassisSysEngTorqueRollingCount : 49|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ChassisSysFastReduEngTorqueValue : 19|12@0+ (0.5,-848) [0|0] "Nm" Vector__XXX
+ SG_ ChassisSysSlowReduEngTorqueValue : 35|12@0+ (0.5,-848) [0|0] "Nm" Vector__XXX
+ SG_ ChassisSysReduEngTorqueReqVal : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ChassisSysIncreEngTorqueReqValue : 3|12@0+ (0.5,-848) [0|0] "Nm" Vector__XXX
+ SG_ ChassisSysIncreEngTorqueReqVal : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ChassisSysEngTorqueIntervenType : 6|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 501 PPEI_Trans_General_Status_2: 8 Vector__XXX
+ SG_ DriverShiftControlTargetGear : 19|4@0+ (1,0) [0|0] ""  ABSESP
+ SG_ AutoTransCommandedGear : 11|4@0+ (1,0) [0|0] ""  ABSESP
+
+BO_ 410 ETEI_Trans_Torque_Request_1: 8 Vector__XXX
+ SG_ TransTorqueRequest_1CheckSum : 63|8@0+ (1,0) [0|0] ""  ABSESP
+ SG_ TransmissionClutchRelease : 33|1@0+ (1,0) [0|0] ""  ABSESP
+ SG_ TransmissionClutchReleaseVal : 34|1@0+ (1,0) [0|0] ""  ABSESP
+
+BO_ 451 PPEI_Engine_Torque_Status_2: 8 Vector__XXX
+ SG_ ClutchSwitchActive : 54|1@0+ (1,0) [0|0] ""  ABSESP
+ SG_ ClutchSwitchActiveVal : 55|1@0+ (1,0) [0|0] ""  ABSESP
+ SG_ EngTorqueDriverRequeRange : 19|12@0+ (0.5,-848) [0|0] "Nm"  ABSESP
+ SG_ EngTorqueDriverRequeRangeVal : 20|1@0+ (1,0) [0|0] ""  ABSESP
+ SG_ EngTorqueActualExtendedRange : 3|12@0+ (0.5,-848) [0|0] "Nm"  ABSESP
+ SG_ EngTorqueActualExtendedRangeVal : 4|1@0+ (1,0) [0|0] ""  ABSESP
+
+BO_ 842 NonDriven_Wheel_Grnd_Velocity: 6 ABSESP
+ SG_ NonDrivWheelVelocityRollingCount : 33|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ NonDrivenWheelVelocityCheckSum : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RNonDrivWheelVelocityVal : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RNonDrivWheelVelocity : 21|16@0+ (0.01,0) [0|0] "km/h" Vector__XXX
+ SG_ LNonDrivWheelVelocityVal : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LNonDrivWheelVelocity : 6|16@0+ (0.01,0) [0|0] "km/h" Vector__XXX
+
+BO_ 1538 NMF_ABS: 8 ABSESP
+ SG_ InitializeOrContinueInd : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 485 PPEI_Steering_Wheel_Angle: 8 Vector__XXX
+ SG_ SteeringWheelAngleCheckSum : 63|8@0+ (1,0) [0|0] ""  ABSESP
+ SG_ SteerWheelAngleAliveRollingCount : 30|2@0+ (1,0) [0|0] ""  ABSESP
+ SG_ SteerWheeAngleSensInitialized : 2|1@0+ (1,0) [0|0] ""  ABSESP
+ SG_ SteerWheelAngleSensCalibraStatus : 6|2@0+ (1,0) [0|0] ""  ABSESP
+ SG_ SteeringWheelAngle : 15|16@0- (0.0625,0) [0|0] "deg"  ABSESP
+ SG_ SteeringWheelAngleVal : 7|1@0+ (1,0) [0|0] ""  ABSESP
+
+BO_ 497 PPEI_Platform_General_Status: 8 Vector__XXX
+ SG_ TransmissionReverseSwitchStatus : 46|1@0+ (1,0) [0|0] ""  ABSESP
+ SG_ ParkBrakeSwitchActive : 36|1@0+ (1,0) [0|0] ""  ABSESP
+
+BO_ 381 Antilock_Brake_and_TC_Status_HS: 8 ABSESP
+ SG_ VehicleSpeedReservedVal : 61|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VehicleStabEnhancementStatus : 53|2@0+ (1,0) [0|0] ""  ABSESP
+ SG_ VehicleStabEnhanSystemOFFIO : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VehicleSpeedReserved : 19|15@0+ (0.015625,0) [0|0] "km/h" Vector__XXX
+ SG_ EBDIndicationOn : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABSIndicationOn : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 489 PPEI_Chassis_General_Status_1: 8 ABSESP
+ SG_ HillHoldControlActive : 54|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VehicleStabEnhancementSystemAct : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TractionControlSystemAct : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BrakeSystemTransGearRequest : 21|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABSActive : 30|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 840 Driven_Wheel_Grnd_Velocity: 6 ABSESP
+ SG_ DrivenWheelVelocityRollingCount : 33|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DrivenWheelVelocityCheckSum : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RDrivWheelVelocityVal : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RDrivWheelVelocity : 21|16@0+ (0.01,0) [0|0] "km/h" Vector__XXX
+ SG_ LDrivWheelVelocityVal : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LDrivWheelVelocity : 6|16@0+ (0.01,0) [0|0] "km/h" Vector__XXX
+
+BO_ 201 PPEI_Engine_General_Status_1: 8 Vector__XXX
+ SG_ AcceleratorPosition : 39|8@0+ (0.392157,0) [0|100.000035] "%"  ABSESP
+ SG_ AcceleratorPositionVal : 31|1@0+ (1,0) [0|0] ""  ABSESP
+ SG_ EngineSpeedStatus : 1|2@0+ (1,0) [0|0] ""  ABSESP
+ SG_ EngineSpeed : 15|16@0+ (0.25,0) [0|0] "rpm"  ABSESP
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ SG_  "GenSigCycleTime" INT 0 65535;
+BA_DEF_ SG_  "GenSigStartValue" HEX 0 134217728;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Periodic","Periodic+Event";
+BA_DEF_ SG_  "GenSigSNA" STRING ;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Periodic+Event","Event","Periodic";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 10000;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "GenSigCycleTime" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Periodic";
+BA_DEF_DEF_  "GenSigSNA" "";
+BA_DEF_DEF_  "GenMsgSendType" "Periodic";
+BA_DEF_DEF_  "GenMsgCycleTime" 1000;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 454 20;
+BA_ "GenMsgCycleTime" BO_ 501 10;
+BA_ "GenMsgCycleTime" BO_ 410 10;
+BA_ "GenMsgCycleTime" BO_ 451 20;
+BA_ "GenMsgCycleTime" BO_ 842 10;
+BA_ "GenMsgCycleTime" BO_ 485 10;
+BA_ "GenMsgCycleTime" BO_ 497 100;
+BA_ "GenMsgCycleTime" BO_ 381 100;
+BA_ "GenMsgCycleTime" BO_ 489 20;
+BA_ "GenMsgCycleTime" BO_ 840 10;
+BA_ "GenMsgCycleTime" BO_ 201 10;
+BA_ "GenSigCycleTime" SG_ 454 ChassisSysEngTorqueCheckSum 20;
+BA_ "GenSigCycleTime" SG_ 454 ChassisSysEngTorqueRollingCount 20;
+BA_ "GenSigCycleTime" SG_ 454 ChassisSysFastReduEngTorqueValue 20;
+BA_ "GenSigStartValue" SG_ 454 ChassisSysFastReduEngTorqueValue 1696;
+BA_ "GenSigCycleTime" SG_ 454 ChassisSysSlowReduEngTorqueValue 20;
+BA_ "GenSigStartValue" SG_ 454 ChassisSysSlowReduEngTorqueValue 1696;
+BA_ "GenSigCycleTime" SG_ 454 ChassisSysReduEngTorqueReqVal 20;
+BA_ "GenSigCycleTime" SG_ 454 ChassisSysIncreEngTorqueReqValue 20;
+BA_ "GenSigStartValue" SG_ 454 ChassisSysIncreEngTorqueReqValue 1696;
+BA_ "GenSigCycleTime" SG_ 454 ChassisSysIncreEngTorqueReqVal 20;
+BA_ "GenSigCycleTime" SG_ 454 ChassisSysEngTorqueIntervenType 20;
+BA_ "GenSigCycleTime" SG_ 501 DriverShiftControlTargetGear 10;
+BA_ "GenSigCycleTime" SG_ 501 AutoTransCommandedGear 10;
+BA_ "GenSigCycleTime" SG_ 410 TransTorqueRequest_1CheckSum 10;
+BA_ "GenSigCycleTime" SG_ 410 TransmissionClutchRelease 10;
+BA_ "GenSigCycleTime" SG_ 410 TransmissionClutchReleaseVal 10;
+BA_ "GenSigCycleTime" SG_ 451 ClutchSwitchActive 20;
+BA_ "GenSigCycleTime" SG_ 451 ClutchSwitchActiveVal 20;
+BA_ "GenSigCycleTime" SG_ 451 EngTorqueDriverRequeRange 20;
+BA_ "GenSigStartValue" SG_ 451 EngTorqueDriverRequeRange 1696;
+BA_ "GenSigCycleTime" SG_ 451 EngTorqueDriverRequeRangeVal 20;
+BA_ "GenSigCycleTime" SG_ 451 EngTorqueActualExtendedRange 20;
+BA_ "GenSigStartValue" SG_ 451 EngTorqueActualExtendedRange 1696;
+BA_ "GenSigCycleTime" SG_ 451 EngTorqueActualExtendedRangeVal 20;
+BA_ "GenSigCycleTime" SG_ 842 NonDrivenWheelVelocityCheckSum 10;
+BA_ "GenSigCycleTime" SG_ 842 RNonDrivWheelVelocityVal 10;
+BA_ "GenSigCycleTime" SG_ 842 RNonDrivWheelVelocity 10;
+BA_ "GenSigSNA" SG_ 842 RNonDrivWheelVelocity "3FFFh";
+BA_ "GenSigCycleTime" SG_ 842 LNonDrivWheelVelocityVal 10;
+BA_ "GenSigCycleTime" SG_ 842 LNonDrivWheelVelocity 10;
+BA_ "GenSigSNA" SG_ 842 LNonDrivWheelVelocity "3FFFh";
+BA_ "GenSigCycleTime" SG_ 1538 InitializeOrContinueInd 1000;
+BA_ "GenSigCycleTime" SG_ 485 SteeringWheelAngleCheckSum 10;
+BA_ "GenSigCycleTime" SG_ 485 SteerWheelAngleAliveRollingCount 10;
+BA_ "GenSigCycleTime" SG_ 485 SteerWheeAngleSensInitialized 10;
+BA_ "GenSigCycleTime" SG_ 485 SteerWheelAngleSensCalibraStatus 10;
+BA_ "GenSigCycleTime" SG_ 485 SteeringWheelAngle 10;
+BA_ "GenSigCycleTime" SG_ 485 SteeringWheelAngleVal 10;
+BA_ "GenSigCycleTime" SG_ 497 TransmissionReverseSwitchStatus 100;
+BA_ "GenSigCycleTime" SG_ 497 ParkBrakeSwitchActive 100;
+BA_ "GenSigCycleTime" SG_ 381 VehicleSpeedReservedVal 20;
+BA_ "GenSigCycleTime" SG_ 381 VehicleStabEnhancementStatus 20;
+BA_ "GenSigCycleTime" SG_ 381 VehicleStabEnhanSystemOFFIO 20;
+BA_ "GenSigCycleTime" SG_ 381 VehicleSpeedReserved 20;
+BA_ "GenSigCycleTime" SG_ 381 EBDIndicationOn 100;
+BA_ "GenSigCycleTime" SG_ 381 ABSIndicationOn 100;
+BA_ "GenSigCycleTime" SG_ 489 HillHoldControlActive 20;
+BA_ "GenSigCycleTime" SG_ 489 VehicleStabEnhancementSystemAct 20;
+BA_ "GenSigCycleTime" SG_ 489 TractionControlSystemAct 20;
+BA_ "GenSigCycleTime" SG_ 489 BrakeSystemTransGearRequest 20;
+BA_ "GenSigCycleTime" SG_ 489 ABSActive 20;
+BA_ "GenSigCycleTime" SG_ 840 DrivenWheelVelocityCheckSum 10;
+BA_ "GenSigCycleTime" SG_ 840 RDrivWheelVelocityVal 10;
+BA_ "GenSigCycleTime" SG_ 840 RDrivWheelVelocity 10;
+BA_ "GenSigSNA" SG_ 840 RDrivWheelVelocity "3FFFh";
+BA_ "GenSigCycleTime" SG_ 840 LDrivWheelVelocityVal 10;
+BA_ "GenSigCycleTime" SG_ 840 LDrivWheelVelocity 10;
+BA_ "GenSigSNA" SG_ 840 LDrivWheelVelocity "3FFFh";
+BA_ "GenSigCycleTime" SG_ 201 AcceleratorPosition 10;
+BA_ "GenSigCycleTime" SG_ 201 AcceleratorPositionVal 10;
+BA_ "GenSigCycleTime" SG_ 201 EngineSpeedStatus 10;
+BA_ "GenSigCycleTime" SG_ 201 EngineSpeed 10;
+VAL_ 454 ChassisSysReduEngTorqueReqVal 1 "Invalid" 0 "Valid" ;
+VAL_ 454 ChassisSysIncreEngTorqueReqVal 1 "Invalid" 0 "Valid" ;
+VAL_ 454 ChassisSysEngTorqueIntervenType 2 "Increase Torque" 1 "Reduce Torque" 0 "No Intervention" ;
+VAL_ 501 DriverShiftControlTargetGear 15 "Not Supported" 14 "Reverse Gear" 13 "Neutral Gear" 12 "Not Supported" 11 "Not Supported" 10 "Not Supported" 9 "Not Supported" 8 "Not Supported" 7 "Not Supported" 6 "Not Supported" 5 "Fifth Gear" 4 "Fourth Gear" 3 "Third Gear" 2 "Second Gear" 1 "First Gear" 0 "Not Supported" ;
+VAL_ 501 AutoTransCommandedGear 15 "Not Supported" 14 "Reverse Gear" 13 "Neutral Gear" 12 "Not Supported" 11 "Not Supported" 10 "Not Supported" 9 "Not Supported" 8 "Not Supported" 7 "Not Supported" 6 "Not Supported" 5 "Fifth Gear" 4 "Fourth Gear" 3 "Third Gear" 2 "Second Gear" 1 "First Gear" 0 "Not Supported" ;
+VAL_ 410 TransmissionClutchRelease 1 "True" 0 "False" ;
+VAL_ 410 TransmissionClutchReleaseVal 1 "Invalid" 0 "Valid" ;
+VAL_ 451 ClutchSwitchActive 1 "True" 0 "False" ;
+VAL_ 451 ClutchSwitchActiveVal 1 "Invalid" 0 "Valid" ;
+VAL_ 451 EngTorqueDriverRequeRangeVal 1 "Invalid" 0 "Valid" ;
+VAL_ 451 EngTorqueActualExtendedRangeVal 1 "Invalid" 0 "Valid" ;
+VAL_ 842 RNonDrivWheelVelocityVal 1 "Invalid" 0 "Valid" ;
+VAL_ 842 LNonDrivWheelVelocityVal 1 "Invalid" 0 "Valid" ;
+VAL_ 1538 InitializeOrContinueInd 1 "Initialize" 0 "Continue" ;
+VAL_ 485 SteerWheeAngleSensInitialized 1 "True" 0 "False" ;
+VAL_ 485 SteerWheelAngleSensCalibraStatus 2 "Calibrated" 1 "Estimated" 0 "Unknown" ;
+VAL_ 485 SteeringWheelAngleVal 1 "Invalid" 0 "Valid" ;
+VAL_ 497 TransmissionReverseSwitchStatus 1 "Active" 0 "Inactive" ;
+VAL_ 497 ParkBrakeSwitchActive 1 "True" 0 "False" ;
+VAL_ 381 VehicleSpeedReservedVal 1 "Invalid" 0 "Valid" ;
+VAL_ 381 VehicleStabEnhancementStatus 2 "Fault" 1 "Active" 0 "Inactive" ;
+VAL_ 381 VehicleStabEnhanSystemOFFIO 1 "True" 0 "False" ;
+VAL_ 381 EBDIndicationOn 1 "True" 0 "False" ;
+VAL_ 381 ABSIndicationOn 1 "True" 0 "False" ;
+VAL_ 489 HillHoldControlActive 1 "True" 0 "False" ;
+VAL_ 489 VehicleStabEnhancementSystemAct 1 "True" 0 "False" ;
+VAL_ 489 TractionControlSystemAct 1 "True" 0 "False" ;
+VAL_ 489 BrakeSystemTransGearRequest 3 "Hold Gear" 2 "Unused and Reserved" 1 "Unused and Reserved" 0 "No Action" ;
+VAL_ 489 ABSActive 1 "True" 0 "False" ;
+VAL_ 840 RDrivWheelVelocityVal 1 "Invalid" 0 "Valid" ;
+VAL_ 840 LDrivWheelVelocityVal 1 "Invalid" 0 "Valid" ;
+VAL_ 201 AcceleratorPositionVal 1 "Invalid" 0 "Valid" ;
+VAL_ 201 EngineSpeedStatus 3 "Invalid" 0 "Valid" ;
+
