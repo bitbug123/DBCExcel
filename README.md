@@ -1,4 +1,4 @@
-# DBCExcel
+# DBCExcel Version 1.0.1
 DBCExcle exchange tool usage <br>
 DBCExcel source file [target file] <br>
 example:<br>
